@@ -1,0 +1,13 @@
+.container
+  p.notice style="color: green" = notice
+
+  h1 Posts
+
+  #posts
+    - @posts.each do |post|
+      .post
+        == render post
+        p
+          = link_to "Show", post, class: "btn btn-info"
+
+  = link_to "New post", new_post_path, class: "btn btn-secondary mt-3"
