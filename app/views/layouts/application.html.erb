@@ -14,8 +14,12 @@
     <script src="https://js.stripe.com/v3/"></script>
   </head>
   <body>
-    <main>
+    <header>
       <%= render 'layouts/navbar' %>
+      <br>
+      <%= render 'layouts/alerts' %>
+    </header>
+    <main>
       <%= yield %>
     </main>
   </body>

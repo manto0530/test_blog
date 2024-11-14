@@ -74,3 +74,6 @@ end
 
 
 gem "slim-rails"
+gem "devise"
+gem 'bigdecimal'
+gem 'mutex_m'
