@@ -1,8 +1,10 @@
 .container
   div id=dom_id(post)
     h2 = post.title
+    h4 = post.user.email
     h7 = pluralize(post.views, "view")
     br
     br
     p
       = post.body
+
